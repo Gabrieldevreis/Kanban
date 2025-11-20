@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="login-container">
+    <div class="login-header">
+      <div class="logo-container">
+        <i data-feather="trello" class="logo-icon"></i>
+      </div>
+      <h1>Kanban</h1>
+      <p>Organize suas tarefas com eficiência e estilo</p>
+    </div>
+
+    <div class="login-body">
+      <h2 class="form-title">Bem-vindo de volta</h2>
+
+      <form id="loginForm" novalidate>
+        <div class="input-group">
+          <label class="input-label" for="email">Email</label>
+          <div class="input-wrapper">
+            <input
+              type="email"
+              id="email"
+              class="input-field"
+              placeholder="seu@email.com"
+              required
+            />
+            <i data-feather="mail" class="input-icon"></i>
+          </div>
+          <div class="error-message" id="emailError"></div>
+        </div>
+
+        <div class="input-group">
+          <label class="input-label" for="password">Senha</label>
+          <div class="input-wrapper">
+            <input
+              type="password"
+              id="password"
+              class="input-field"
+              placeholder="••••••••"
+              required
+              minlength="6"
+            />
+            <i data-feather="lock" class="input-icon"></i>
+          </div>
+          <div class="error-message" id="passwordError"></div>
+        </div>
+
+        <button type="submit" class="login-button">
+          <i data-feather="log-in"></i>
+          <span>Entrar</span>
+        </button>
+      </form>
+
+      <div class="signup-link">
+        Não tem uma conta? <a href="#">Cadastre-se grátis</a>
+      </div>
+    </div>
+  </div>
+</div>
