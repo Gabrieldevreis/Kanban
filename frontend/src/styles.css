@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --primary-1: #5e72e4;
+  --primary-2: #825ee4;
+  --primary-3: #8b5cf6;
+  --gray-100: #f8f9fc;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e0;
+  --gray-600: #718096;
+  --gray-800: #2d3748;
+  --success: #1dd1a1;
+  --error: #ff3b5c;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.25);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
