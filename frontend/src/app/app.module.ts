@@ -4,6 +4,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthModule } from './features/auth/auth.module';
+import { LayoutModule } from './features/layout/layout.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { AuthModule } from './features/auth/auth.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModule
+    AuthModule,
+    LayoutModule
   ],
   providers: [
     provideClientHydration()
