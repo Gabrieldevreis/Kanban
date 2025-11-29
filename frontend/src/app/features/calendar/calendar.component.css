@@ -1,0 +1,251 @@
+.main-content {
+  flex: 1;
+  padding: 32px;
+  overflow-y: auto;
+  background: #f1f3f9;
+}
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 28px;
+  margin-bottom: 30px;
+}
+
+.calendar-section {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.calendar-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.calendar-nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.nav-btn {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 12px;
+  background: #f1f3f9;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: #718096;
+}
+
+.nav-btn:hover {
+  background: #5e72e4;
+  color: white;
+  transform: scale(1.05);
+}
+
+.today-btn {
+  padding: 0 20px;
+  height: 42px;
+  border: 2px solid #5e72e4;
+  border-radius: 12px;
+  background: white;
+  color: #5e72e4;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.today-btn:hover {
+  background: #5e72e4;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.weekday {
+  text-align: center;
+  font-weight: 600;
+  color: #718096;
+  font-size: 13px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  background: #f8f9fc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-day:hover {
+  background: #e8ebff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(94, 114, 228, 0.15);
+}
+
+.calendar-day.other-month {
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.calendar-day.today {
+  background: linear-gradient(135deg, #5e72e4 0%, #825ee4 50%, #8b5cf6 100%);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(94, 114, 228, 0.3);
+}
+
+.calendar-day.selected {
+  background: #5e72e4;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(94, 114, 228, 0.4);
+}
+
+.day-number {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.day-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  flex: 1;
+}
+
+.day-task-dot {
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.day-task-dot.high {
+  background: #ff3b5c;
+}
+.day-task-dot.medium {
+  background: #f7b731;
+}
+.day-task-dot.low {
+  background: #1dd1a1;
+}
+
+.day-task-count {
+  font-size: 10px;
+  margin-top: auto;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+/* SIDEBAR */
+.calendar-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.sidebar-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mini-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.mini-weekday {
+  text-align: center;
+  font-size: 10px;
+  color: #718096;
+  font-weight: 600;
+  padding: 6px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mini-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.mini-day:hover {
+  background: #f1f3f9;
+  transform: scale(1.05);
+}
+
+.mini-day.today {
+  background: #5e72e4;
+  color: white;
+  font-weight: 700;
+}
+
+.mini-day.other-month {
+  opacity: 0.3;
+}

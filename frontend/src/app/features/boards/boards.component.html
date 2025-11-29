@@ -1,0 +1,228 @@
+<div class="main-container">
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <div class="content-header">
+      <h1>Desenvolvimento Sprint 23</h1>
+      <p>Acompanhe o progresso das suas tarefas com clareza e organização</p>
+    </div>
+
+    <div class="board-controls">
+      <button class="btn btn-primary">
+        <i data-feather="plus"></i>
+        <span>Nova Tarefa</span>
+      </button>
+      <button class="btn btn-secondary">
+        <i data-feather="filter"></i>
+        <span>Filtrar</span>
+      </button>
+      <button class="btn btn-secondary">
+        <i data-feather="users"></i>
+        <span>Membros</span>
+      </button>
+    </div>
+
+    <!-- KANBAN BOARD -->
+    <div class="kanban-board">
+      <!-- COLUNA: A FAZER -->
+      <div class="kanban-column">
+        <div class="column-header">
+          <div class="column-title">
+            <i data-feather="file-text"></i>
+            A Fazer
+            <span class="column-count">3</span>
+          </div>
+          <div class="column-menu">
+            <i data-feather="more-vertical"></i>
+          </div>
+        </div>
+
+        <div class="task-card priority-high">
+          <div class="task-title">Implementar autenticação</div>
+          <div class="task-description">
+            Criar sistema de login com JWT e refresh tokens
+          </div>
+          <div class="task-footer">
+            <div class="task-tags">
+              <span class="task-tag">Backend</span>
+              <span class="task-tag">Urgente</span>
+            </div>
+            <div class="task-assignee">AM</div>
+          </div>
+        </div>
+
+        <div class="task-card priority-medium">
+          <div class="task-title">Design da homepage</div>
+          <div class="task-description">
+            Criar wireframes e protótipo da página inicial
+          </div>
+          <div class="task-footer">
+            <div class="task-tags">
+              <span class="task-tag">Design</span>
+            </div>
+            <div class="task-assignee">JM</div>
+          </div>
+        </div>
+
+        <div class="task-card priority-low">
+          <div class="task-title">Documentação API</div>
+          <div class="task-description">
+            Atualizar documentação dos endpoints
+          </div>
+          <div class="task-footer">
+            <div class="task-tags">
+              <span class="task-tag">Docs</span>
+            </div>
+            <div class="task-assignee">LC</div>
+          </div>
+        </div>
+
+        <button class="add-task-btn">
+          <i data-feather="plus"></i>
+          <span>Adicionar tarefa</span>
+        </button>
+      </div>
+
+      <!-- COLUNA: EM PROGRESSO -->
+      <div class="kanban-column">
+        <div class="column-header">
+          <div class="column-title">
+            <i data-feather="refresh-cw"></i>
+            Em Progresso
+            <span class="column-count">2</span>
+          </div>
+          <div class="column-menu">
+            <i data-feather="more-vertical"></i>
+          </div>
+        </div>
+
+        <div class="task-card priority-high">
+          <div class="task-title">Integração com API</div>
+          <div class="task-description">
+            Conectar frontend com backend REST API
+          </div>
+          <div class="task-footer">
+            <div class="task-tags">
+              <span class="task-tag">Frontend</span>
+            </div>
+            <div class="task-assignee">RS</div>
+          </div>
+        </div>
+
+        <div class="task-card priority-medium">
+          <div class="task-title">Testes unitários</div>
+          <div class="task-description">
+            Criar testes para módulo de autenticação
+          </div>
+          <div class="task-footer">
+            <div class="task-tags">
+              <span class="task-tag">Testing</span>
+            </div>
+            <div class="task-assignee">PM</div>
+          </div>
+        </div>
+
+        <button class="add-task-btn">
+          <i data-feather="plus"></i>
+          <span>Adicionar tarefa</span>
+        </button>
+      </div>
+
+      <!-- COLUNA: REVISÃO -->
+      <div class="kanban-column">
+        <div class="column-header">
+          <div class="column-title">
+            <i data-feather="eye"></i>
+            Revisão
+            <span class="column-count">2</span>
+          </div>
+          <div class="column-menu">
+            <i data-feather="more-vertical"></i>
+          </div>
+        </div>
+
+        <div class="task-card priority-medium">
+          <div class="task-title">Layout responsivo</div>
+          <div class="task-description">
+            Ajustar layout para mobile e tablet
+          </div>
+          <div class="task-footer">
+            <div class="task-tags">
+              <span class="task-tag">Frontend</span>
+              <span class="task-tag">Mobile</span>
+            </div>
+            <div class="task-assignee">CF</div>
+          </div>
+        </div>
+
+        <div class="task-card priority-low">
+          <div class="task-title">Otimização de imagens</div>
+          <div class="task-description">
+            Comprimir e otimizar assets do projeto
+          </div>
+          <div class="task-footer">
+            <div class="task-tags">
+              <span class="task-tag">Performance</span>
+            </div>
+            <div class="task-assignee">TG</div>
+          </div>
+        </div>
+
+        <button class="add-task-btn">
+          <i data-feather="plus"></i>
+          <span>Adicionar tarefa</span>
+        </button>
+      </div>
+
+      <!-- COLUNA: CONCLUÍDO -->
+      <div class="kanban-column">
+        <div class="column-header">
+          <div class="column-title">
+            <i data-feather="check-circle"></i>
+            Concluído
+            <span class="column-count">4</span>
+          </div>
+          <div class="column-menu">
+            <i data-feather="more-vertical"></i>
+          </div>
+        </div>
+
+        <div class="task-card priority-high">
+          <div class="task-title">Setup do projeto</div>
+          <div class="task-description">Configurar ambiente e dependências</div>
+          <div class="task-footer">
+            <div class="task-tags">
+              <span class="task-tag">Setup</span>
+            </div>
+            <div class="task-assignee">JS</div>
+          </div>
+        </div>
+
+        <div class="task-card priority-medium">
+          <div class="task-title">Database Schema</div>
+          <div class="task-description">
+            Definir estrutura do banco de dados
+          </div>
+          <div class="task-footer">
+            <div class="task-tags">
+              <span class="task-tag">Database</span>
+            </div>
+            <div class="task-assignee">AM</div>
+          </div>
+        </div>
+
+        <button class="add-task-btn">
+          <i data-feather="plus"></i>
+          <span>Adicionar tarefa</span>
+        </button>
+      </div>
+
+      <!-- ADICIONAR NOVA COLUNA -->
+      <div class="add-column-container">
+        <button class="add-task-btn">
+          <i data-feather="plus"></i>
+          <span>Adicionar coluna</span>
+        </button>
+      </div>
+    </div>
+  </main>
+</div>

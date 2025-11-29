@@ -1,0 +1,82 @@
+<main class="main-content">
+  <div class="page-header">
+    <h1>Calendário</h1>
+    <p>Visualize todas as suas tarefas organizadas por data</p>
+  </div>
+
+  <div class="calendar-container">
+    <!-- CALENDAR -->
+    <div class="calendar-section">
+      <div class="calendar-header">
+        <h2 class="calendar-title" id="currentMonth">
+          <i data-feather="calendar"></i>
+          Novembro 2025
+        </h2>
+        <div class="calendar-nav">
+          <button class="nav-btn" onclick="previousMonth()">
+            <i data-feather="chevron-left"></i>
+          </button>
+          <button class="today-btn" onclick="goToToday()">
+            <i data-feather="calendar"></i>
+            Hoje
+          </button>
+          <button class="nav-btn" onclick="nextMonth()">
+            <i data-feather="chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="calendar-weekdays">
+        <div class="weekday">Dom</div>
+        <div class="weekday">Seg</div>
+        <div class="weekday">Ter</div>
+        <div class="weekday">Qua</div>
+        <div class="weekday">Qui</div>
+        <div class="weekday">Sex</div>
+        <div class="weekday">Sáb</div>
+      </div>
+
+      <div class="calendar-days" id="calendarDays">
+        <!-- Gerado via JS -->
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="calendar-sidebar">
+      <!-- Mini Calendar -->
+      <div class="sidebar-card">
+        <h3 class="sidebar-title">
+          <i data-feather="calendar"></i>
+          <span id="miniMonthTitle">Novembro 2025</span>
+        </h3>
+        <div class="mini-calendar" id="miniCalendar">
+          <!-- Gerado via JS -->
+        </div>
+      </div>
+
+      <!-- Upcoming Tasks -->
+      <div class="sidebar-card">
+        <h3 class="sidebar-title">
+          <i data-feather="clock"></i>
+          Próximas Tarefas
+        </h3>
+        <div id="upcomingTasks">
+          <!-- Gerado via JS -->
+        </div>
+      </div>
+
+      <!-- Selected Day Tasks -->
+      <div class="sidebar-card" id="selectedDayCard">
+        <div class="selected-day-info">
+          <div class="selected-date" id="selectedDate">15 de Novembro</div>
+          <div class="selected-count" id="selectedCount">
+            3 tarefas agendadas
+          </div>
+        </div>
+        <div id="selectedDayTasks">
+          <!-- Gerado via JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
